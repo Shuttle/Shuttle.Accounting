@@ -7,9 +7,15 @@ Generic accounting implementation.
 
 - TransactionType
 - Journal
-- TransactionJournal (TransactionTypeID)
+  - PostingId
+- JournalTransaction (TransactionTypeID)
+  - Groups inidivual transaction e.g. Amount + VAT (2 transactions)
 - FinancialAccount
-  - Transaction (contains JournalID / TransactionJournalID)
+  - Transactions (contains JournalID / TransactionJournalID)
+    - Period (when transaction occurred)
+    - EffectivePeriod (period that transaction applies to)
+      - Transaction may be effected today but represents arrears so perhaps 6 months ago and should go into ageing bucket
+  - AgeingBuckets
 - FinancialAccountOffset
 - FinanceSchedule
   - Instalment
