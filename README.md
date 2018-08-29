@@ -6,10 +6,11 @@ Generic accounting implementation.
 ### Design
 
 - TransactionType
+- PostingRules
 - Journal
   - PostingId
 - JournalTransaction (TransactionTypeID)
-  - Groups inidivual transaction e.g. Amount + VAT (2 transactions)
+  - Groups individual transaction e.g. Amount + VAT (2 transactions)
 - FinancialAccount
   - Transactions (contains JournalID / TransactionJournalID)
     - Period (when transaction occurred)
