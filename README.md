@@ -11,7 +11,8 @@ Generic accounting implementation.
   - PostingId
 - JournalTransaction (TransactionTypeID)
   - Groups individual transaction e.g. Amount + VAT (2 transactions)
-- FinancialAccount
+- AccountType
+- Account
   - Transactions (contains JournalID / TransactionJournalID)
     - Period (when transaction occurred)
     - EffectivePeriod (period that transaction applies to)
