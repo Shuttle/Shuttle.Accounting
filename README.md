@@ -18,6 +18,6 @@ Generic accounting implementation.
     - EffectivePeriod (period that transaction applies to)
       - Transaction may be effected today but represents arrears so perhaps 6 months ago and should go into ageing bucket
   - AgeingBuckets
-- FinancialAccountOffset
+- AccountOffset
 - FinanceSchedule
   - Instalment
